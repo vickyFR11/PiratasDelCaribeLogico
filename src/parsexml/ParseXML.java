@@ -60,6 +60,8 @@ public class ParseXML {
                    
                     ruta = objeto.getSitio().get(i).getCofre().getMapa().getRuta();
                     
+                    //System.out.println(objeto.getSitio().get(i).getCalamidad());
+                    
                     if (objeto.getSitio().get(i).getCalamidad() != null){
                         nCalamidad = objeto.getSitio().get(i).getCalamidad().getNombre();
                         cHombres = objeto.getSitio().get(i).getCalamidad().getCostoHombres();
@@ -67,6 +69,7 @@ public class ParseXML {
                         cComida = objeto.getSitio().get(i).getCalamidad().getCostoComida();
 
                         Calamidad calamidad = new Calamidad(nCalamidad, cHombres, cMuniciones, cComida);
+                        objeto.getSitio().get(i).setCalamidad(calamidad);
                     }
                     
                     Mapa mapa = new Mapa(ruta);
@@ -75,7 +78,7 @@ public class ParseXML {
                     
                     objeto.getSitio().get(i).setCofre(cofre);
                     
-                    //System.out.println(objeto.getSitio().get(i).getCofre().getJoyas() );
+                    System.out.println(objeto.getSitio().get(i).getCalamidad());
                 }
                  
 	  } catch (JAXBException e) {
