@@ -18,6 +18,15 @@ public class Mapa implements java.io.Serializable{
     public Mapa(List<String> ruta) {
         this.ruta = ruta;
     }
+    
+    /**
+     * Retorna true si debe viajar a otro continente, false si el destino es local
+     * @param destino
+     * @return
+     */
+    public boolean evaluarDestino(String destino){
+        return true;
+    }
 
     public void setRuta(List<String> ruta) {
         this.ruta = ruta;
