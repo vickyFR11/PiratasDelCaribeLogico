@@ -16,6 +16,14 @@ public class Cofre implements java.io.Serializable{
     private int piedrasPreciosas;
     private int corazonPrincesa;
     private int capacidad;
+    private int totalActual;
+    public static int pesoOro = 25;
+    public static int pesoPlata = 50;
+    public static int pesoPerlas = 10;
+    public static int pesoMonedas = 15;
+    public static int pesoJoyas = 15;
+    public static int pesoPiedras = 10;
+    public static int pesoCorazon = 5;
 
     public Cofre() {
         this.mapa = null;
@@ -43,14 +51,20 @@ public class Cofre implements java.io.Serializable{
     
     public Cofre(Mapa mapa,int oro, int plata, int perlas, int monedasOro, int joyas, int piedrasPreciosas, int corazonPrincesa, int capacidad) {
         this.mapa = mapa;
-        this.oro = oro*25;
-        this.plata = plata*50;
-        this.perlas = perlas*10;
-        this.monedasOro = monedasOro*15;
-        this.joyas = joyas*15;
-        this.piedrasPreciosas = piedrasPreciosas*10;
-        this.corazonPrincesa = corazonPrincesa*5;
+        this.oro = oro*pesoOro;
+        this.plata = plata*pesoPlata;
+        this.perlas = perlas*pesoPerlas;
+        this.monedasOro = monedasOro*pesoMonedas;
+        this.joyas = joyas*pesoJoyas;
+        this.piedrasPreciosas = piedrasPreciosas*pesoPiedras;
+        this.corazonPrincesa = corazonPrincesa*pesoCorazon;
         this.capacidad = capacidad;
+    }
+    
+    public int getCapacidadActual(){
+        this.totalActual = this.oro + this.plata + this.perlas + this.monedasOro + this.joyas + this.piedrasPreciosas + this.corazonPrincesa;
+        
+        return totalActual;
     }
     
     public void setMapa(Mapa mapa) {
