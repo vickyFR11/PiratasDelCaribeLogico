@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<maquina>
+<maquina id="4">
+	<ip>192.168.110.14</ip>
+	<salida>1-</salida>
+	<salida>2-</salida>
+	<salida>3-</salida>
 	<sitio>
 		<isla>La Gran Isla de la Española</isla>
 		<nombreSitio>Puerto Rico</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.12</ruta>
+					
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>1</oro>
@@ -33,9 +34,7 @@
 		<nombreSitio>Puerto de las Ballenas</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>2</cofres>
-				<ruta>192.168.110.11</ruta>	
-				<ruta>192.168.110.12</ruta>
+				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>5</oro>
@@ -60,10 +59,7 @@
 		<nombreSitio>Bahia del Tesoro Perdido</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.12</ruta>
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.11</ruta>
+				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>2</oro>
@@ -82,9 +78,13 @@
 		<nombreSitio>Cueva del Pirata</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>2</cofres>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.10</ruta>
+				<ruta>1-Playa de las Perlas</ruta>
+				<ruta>1-Cayo Sotavento</ruta>
+				<ruta>2-Bahia de la Esperanza</ruta>
+				<ruta>4-Bahia del Tesoro Perdido</ruta>	
+				<ruta>2-Cueva del Bucanero</ruta>
+				<ruta>2-Bahia del Buen Reposo</ruta>
+				<ruta>3-Cementerio de Barcos</ruta>
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>2</oro>
@@ -102,10 +102,7 @@
 		<nombreSitio>Cayo de los Pelicanos</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.12</ruta>
-				<ruta>192.168.110.10</ruta>
+				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>3</oro>
@@ -119,7 +116,7 @@
 		<costoComida>8</costoComida>
 		<costoTripulacion>10</costoTripulacion>
 		<calamidad>
-			<nombre>Tormenta</nombre>
+			<nombre>Tornado</nombre>
 			<costoHombres>6</costoHombres>
 			<costoMuniciones>10</costoMuniciones>
 			<costoComida>13</costoComida>

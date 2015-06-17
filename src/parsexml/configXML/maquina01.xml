@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<maquina>
+<maquina id="1">
+	<ip>192.168.110.11</ip>
+	<salida>2-</salida>
+	<salida>3-</salida>
+	<salida>4-</salida>
 	<barco>
 		<nombre>Venganza Errante</nombre>
 		<tripulacion>50</tripulacion>
@@ -14,12 +18,7 @@
 		<isla>Isla Nueva Esperanzas</isla>
 		<nombreSitio>Puerto Real</nombreSitio>
 		<cofre>
-			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.12</ruta>
-				<cofresEncontrados>0</cofresEncontrados>
+			<mapa>	
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>2</oro>
@@ -38,10 +37,12 @@
 		<nombreSitio>Cala de los Martires</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>2</cofres>
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.12</ruta>
-				<cofresEncontrados>0</cofresEncontrados>
+				<ruta>3-Cueva de los Huesos</ruta>
+				<ruta>3-Cayo Barlovento</ruta>
+				<ruta>4-Cueva del Pirata</ruta>
+				<ruta>4-Puerto Rico</ruta>	
+				<ruta>2-Bahia del Buen Reposo</ruta>
+				<ruta>3-Cementerio de Barcos</ruta>
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>4</oro>
@@ -65,12 +66,7 @@
 		<isla>Isla Nueva Esperanzas</isla>
 		<nombreSitio>Playa de las Perlas</nombreSitio>
 		<cofre>
-			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.12</ruta>
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.11</ruta>
-				<cofresEncontrados>0</cofresEncontrados>
+			<mapa>	
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>5</oro>
@@ -79,7 +75,7 @@
 			<monedasOro>5</monedasOro>
 			<joyas>3</joyas>
 			<piedrasPreciosas>2</piedrasPreciosas>
-			<corazonPrincesa>1</corazonPrincesa>
+			<corazonPrincesa>0</corazonPrincesa>
 		</cofre>
 		<costoComida>3</costoComida>
 		<costoTripulacion>5</costoTripulacion>
@@ -88,10 +84,6 @@
 		<nombreSitio>Cayo del Buen Viento</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>2</cofres>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.12</ruta>
-				<cofresEncontrados>0</cofresEncontrados>
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>2</oro>
@@ -108,13 +100,7 @@
 	<sitio>
 		<nombreSitio>Cayo de Sotavento</nombreSitio>
 		<cofre>
-			<mapa>
-				<cofres>4</cofres>
-				<ruta>110</ruta>
-				<ruta>130</ruta>
-				<ruta>120</ruta>
-				<ruta>140</ruta>
-				<cofresEncontrados>0</cofresEncontrados>
+			<mapa>				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>2</oro>

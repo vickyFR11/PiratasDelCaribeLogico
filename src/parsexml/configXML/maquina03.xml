@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<maquina>
+<maquina id="3">
+	<ip>192.168.110.13</ip>
+	<salida>1-</salida>
+	<salida>2-</salida>
+	<salida>4-</salida>
 	<sitio>
 		<isla>Isla Tortuga</isla>
 		<nombreSitio>Cueva de los Huesos</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.12</ruta>
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>12</oro>
@@ -17,20 +17,28 @@
 			<monedasOro>8</monedasOro>
 			<joyas>0</joyas>
 			<piedrasPreciosas>3</piedrasPreciosas>
-			<corazonPrincesa>1</corazonPrincesa>
+			<corazonPrincesa>0</corazonPrincesa>
 		</cofre>
 		<costoComida>15</costoComida>
 		<costoTripulacion>12</costoTripulacion>
+		<calamidad>
+			<nombre>Kraken</nombre>
+			<costoHombres>16</costoHombres>
+			<costoMuniciones>9</costoMuniciones>
+			<costoComida>8</costoComida>
+		</calamidad>
 	</sitio>
 	<sitio>
 		<isla>Isla Tortuga</isla>
 		<nombreSitio>Bahia del Buen Retiro</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.11</ruta>	
-				<ruta>192.168.110.10</ruta>
-				<ruta>192.168.110.12</ruta>
+				<ruta>1-Playa de las Perlas</ruta>
+				<ruta>1-Cayo del Buen Viento</ruta>
+				<ruta>2-Cueva de los Marineros</ruta>
+				<ruta>2-Puerto de la Reina</ruta>
+				<ruta>4-Puerto de las Ballenas</ruta>	
+				<ruta>3-Cayo de Barlovento</ruta>
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>8</oro>
@@ -43,21 +51,13 @@
 		</cofre>
 		<costoComida>10</costoComida>
 		<costoTripulacion>12</costoTripulacion>
-		<calamidad>
-			<nombre>Kraken</nombre>
-			<costoHombres>16</costoHombres>
-			<costoMuniciones>9</costoMuniciones>
-			<costoComida>8</costoComida>
-		</calamidad>
 	</sitio>
 	<sitio>
 		<isla>Isla las Aves</isla>
 		<nombreSitio>Bahia de las Flores</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>2</cofres>
-				<ruta>192.168.110.12</ruta>
-				<ruta>192.168.110.11</ruta>
+				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>5</oro>
@@ -76,9 +76,7 @@
 		<nombreSitio>Cementerio de Barcos</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>2</cofres>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.10</ruta>
+				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>6</oro>
@@ -87,7 +85,7 @@
 			<monedasOro>3</monedasOro>
 			<joyas>8</joyas>
 			<piedrasPreciosas>3</piedrasPreciosas>
-			<corazonPrincesa>0</corazonPrincesa>
+			<corazonPrincesa>1</corazonPrincesa>
 		</cofre>
 		<costoComida>17</costoComida>
 		<costoTripulacion>8</costoTripulacion>
@@ -96,10 +94,7 @@
 		<nombreSitio>Cayo de Barlovento</nombreSitio>
 		<cofre>
 			<mapa>
-				<cofres>3</cofres>
-				<ruta>192.168.110.11</ruta>
-				<ruta>192.168.110.12</ruta>
-				<ruta>192.168.110.10</ruta>
+				
 			</mapa>
 			<capacidad>1000</capacidad>
 			<oro>3</oro>
