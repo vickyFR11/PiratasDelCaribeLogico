@@ -41,6 +41,59 @@ public class Barco implements java.io.Serializable{
             System.out.println("Error al conectar: "+e);
         }
     }
+    
+    /**
+     *  Función recoger, recoge y deja objetos en el cofre dependiendo del valor.
+     *  Evalua si cambiar el mapa actual por el que está en el cofre, si lo hay.
+     * @param sitio
+     */
+    public void recoger(Sitio sitio){
+        Mapa auxMapa;
+        
+        //Recoger cofre (Recoge cosas de mayor valor si entran, si no, deja cosas
+        //de menor valor para liberar espacio.
+        
+        
+        
+        //Recoger mapa
+        if(sitio.getCofre().getMapa() != null){
+            if(this.cofre.getMapa().getSitiosVisitados() > sitio.getCofre().getMapa().getRuta().size()){
+                auxMapa = this.cofre.getMapa();
+                this.cofre.setMapa(sitio.getCofre().getMapa());
+                this.cofre.setMapa(auxMapa);
+                System.out.println("Barco: "+this.nombre+" intercambió tesoro");
+            }
+        }
+    }
+    
+    /**
+     * Descuenta los recursos del barco, según los costos del sitio, 
+     * y de alguna calamidad
+     * @param sitio
+     */
+    public void descontarRecursos(Sitio sitio){
+        
+    }
+    
+    /**
+     * Determina donde está, busca en la lista el siguiente sitio y lo retorna
+     * @param mapa
+     * @return
+     */
+    public String getSiguienteSitio(Mapa mapa){
+        
+        return "string";
+    }
+    
+    /**
+     * Si el sitio es local, se mueve al sitio, sino se mueve al límite del mapa
+     * correspondiente, hace llamada RMI y se mueve al sitio remoto. Luego
+     * ejecuta los métodos correspondientes.
+     * @param sitio
+     */
+    public void irASitio(String sitio){
+        
+    }
 
     public String getNombre() {
         return nombre;
