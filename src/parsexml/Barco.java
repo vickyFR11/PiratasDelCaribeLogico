@@ -50,8 +50,8 @@ public class Barco implements java.io.Serializable{
     public void recoger(Sitio sitio){
         Mapa auxMapa;
         
-        //Recoger cofre (Recoge cosas de mayor valor si entran, si no, deja cosas
-        //de menor valor para liberar espacio.
+        //Recoger todo lo que entre en el cofre. Si el corazón de la princesa
+        //no entra dejar algo.
         
         
         
@@ -73,16 +73,6 @@ public class Barco implements java.io.Serializable{
      */
     public void descontarRecursos(Sitio sitio){
         
-    }
-    
-    /**
-     * Determina donde está, busca en la lista el siguiente sitio y lo retorna
-     * @param mapa
-     * @return
-     */
-    public String getSiguienteSitio(Mapa mapa){
-        
-        return "string";
     }
     
     /**
