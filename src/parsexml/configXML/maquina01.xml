@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<maquina>
+	<barco>
+		<nombre>Venganza Errante</nombre>
+		<tripulacion>50</tripulacion>
+		<comida>80</comida>
+		<municiones>60</municiones>
+		<tipo>1</tipo>
+		<cofre>
+			<capacidad>100</capacidad>
+		</cofre>
+	</barco>
+	<sitio>
+		<isla>Isla Nueva Esperanzas</isla>
+		<nombreSitio>Puerto Real</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>3</cofres>
+				<ruta>192.168.110.10</ruta>
+				<ruta>192.168.110.11</ruta>
+				<ruta>192.168.110.12</ruta>
+				<cofresEncontrados>0</cofresEncontrados>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>2</oro>
+			<plata>5</plata>
+			<perlas>1</perlas>
+			<monedasOro>5</monedasOro>
+			<joyas>3</joyas>
+			<piedrasPreciosas>6</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>5</costoComida>
+		<costoTripulacion>12</costoTripulacion>
+	</sitio>
+	<sitio>
+		<isla>Isla Nueva Esperanzas</isla>
+		<nombreSitio>Cala de los Martires</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>2</cofres>
+				<ruta>192.168.110.10</ruta>
+				<ruta>192.168.110.12</ruta>
+				<cofresEncontrados>0</cofresEncontrados>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>4</oro>
+			<plata>3</plata>
+			<perlas>3</perlas>
+			<monedasOro>2</monedasOro>
+			<joyas>4</joyas>
+			<piedrasPreciosas>5</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>10</costoComida>
+		<costoTripulacion>2</costoTripulacion>
+		<calamidad>
+			<nombre>Kraken</nombre>
+			<costoHombres>6</costoHombres>
+			<costoMuniciones>4</costoMuniciones>
+			<costoComida>5</costoComida>
+		</calamidad>
+	</sitio>
+		<sitio>
+		<isla>Isla Nueva Esperanzas</isla>
+		<nombreSitio>Playa de las Perlas</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>3</cofres>
+				<ruta>192.168.110.12</ruta>
+				<ruta>192.168.110.10</ruta>
+				<ruta>192.168.110.11</ruta>
+				<cofresEncontrados>0</cofresEncontrados>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>5</oro>
+			<plata>6</plata>
+			<perlas>10</perlas>
+			<monedasOro>5</monedasOro>
+			<joyas>3</joyas>
+			<piedrasPreciosas>2</piedrasPreciosas>
+			<corazonPrincesa>1</corazonPrincesa>
+		</cofre>
+		<costoComida>3</costoComida>
+		<costoTripulacion>5</costoTripulacion>
+	</sitio>
+	<sitio>
+		<nombreSitio>Cayo del Buen Viento</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>2</cofres>
+				<ruta>192.168.110.11</ruta>
+				<ruta>192.168.110.12</ruta>
+				<cofresEncontrados>0</cofresEncontrados>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>2</oro>
+			<plata>5</plata>
+			<perlas>1</perlas>
+			<monedasOro>5</monedasOro>
+			<joyas>3</joyas>
+			<piedrasPreciosas>6</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>5</costoComida>
+		<costoTripulacion>12</costoTripulacion>
+	</sitio>
+	<sitio>
+		<nombreSitio>Cayo de Sotavento</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>4</cofres>
+				<ruta>110</ruta>
+				<ruta>130</ruta>
+				<ruta>120</ruta>
+				<ruta>140</ruta>
+				<cofresEncontrados>0</cofresEncontrados>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>2</oro>
+			<plata>5</plata>
+			<perlas>1</perlas>
+			<monedasOro>5</monedasOro>
+			<joyas>3</joyas>
+			<piedrasPreciosas>6</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>5</costoComida>
+		<costoTripulacion>2</costoTripulacion>
+		<calamidad>
+			<nombre>Tormenta</nombre>
+			<costoHombres>3</costoHombres>
+			<costoMuniciones>6</costoMuniciones>
+			<costoComida>4</costoComida>
+		</calamidad>
+	</sitio>
+</maquina>

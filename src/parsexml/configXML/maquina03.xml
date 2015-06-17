@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<maquina>
+	<sitio>
+		<isla>Isla Tortuga</isla>
+		<nombreSitio>Cueva de los Huesos</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>3</cofres>
+				<ruta>192.168.110.10</ruta>
+				<ruta>192.168.110.11</ruta>
+				<ruta>192.168.110.12</ruta>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>12</oro>
+			<plata>15</plata>
+			<perlas>6</perlas>
+			<monedasOro>8</monedasOro>
+			<joyas>0</joyas>
+			<piedrasPreciosas>3</piedrasPreciosas>
+			<corazonPrincesa>1</corazonPrincesa>
+		</cofre>
+		<costoComida>15</costoComida>
+		<costoTripulacion>12</costoTripulacion>
+	</sitio>
+	<sitio>
+		<isla>Isla Tortuga</isla>
+		<nombreSitio>Bahia del Buen Retiro</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>3</cofres>
+				<ruta>192.168.110.11</ruta>	
+				<ruta>192.168.110.10</ruta>
+				<ruta>192.168.110.12</ruta>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>8</oro>
+			<plata>9</plata>
+			<perlas>5</perlas>
+			<monedasOro>3</monedasOro>
+			<joyas>7</joyas>
+			<piedrasPreciosas>3</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>10</costoComida>
+		<costoTripulacion>12</costoTripulacion>
+		<calamidad>
+			<nombre>Kraken</nombre>
+			<costoHombres>16</costoHombres>
+			<costoMuniciones>9</costoMuniciones>
+			<costoComida>8</costoComida>
+		</calamidad>
+	</sitio>
+	<sitio>
+		<isla>Isla las Aves</isla>
+		<nombreSitio>Bahia de las Flores</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>2</cofres>
+				<ruta>192.168.110.12</ruta>
+				<ruta>192.168.110.11</ruta>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>5</oro>
+			<plata>6</plata>
+			<perlas>9</perlas>
+			<monedasOro>5</monedasOro>
+			<joyas>4</joyas>
+			<piedrasPreciosas>4</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>7</costoComida>
+		<costoTripulacion>5</costoTripulacion>
+	</sitio>
+	<sitio>
+		<isla>Isla las Aves</isla>
+		<nombreSitio>Cementerio de Barcos</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>2</cofres>
+				<ruta>192.168.110.11</ruta>
+				<ruta>192.168.110.10</ruta>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>6</oro>
+			<plata>7</plata>
+			<perlas>4</perlas>
+			<monedasOro>3</monedasOro>
+			<joyas>8</joyas>
+			<piedrasPreciosas>3</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>17</costoComida>
+		<costoTripulacion>8</costoTripulacion>
+	</sitio>
+	<sitio>
+		<nombreSitio>Cayo de Barlovento</nombreSitio>
+		<cofre>
+			<mapa>
+				<cofres>3</cofres>
+				<ruta>192.168.110.11</ruta>
+				<ruta>192.168.110.12</ruta>
+				<ruta>192.168.110.10</ruta>
+			</mapa>
+			<capacidad>1000</capacidad>
+			<oro>3</oro>
+			<plata>5</plata>
+			<perlas>12</perlas>
+			<monedasOro>3</monedasOro>
+			<joyas>3</joyas>
+			<piedrasPreciosas>4</piedrasPreciosas>
+			<corazonPrincesa>0</corazonPrincesa>
+		</cofre>
+		<costoComida>8</costoComida>
+		<costoTripulacion>11</costoTripulacion>
+		<calamidad>
+			<nombre>Tormenta</nombre>
+			<costoHombres>10</costoHombres>
+			<costoMuniciones>11</costoMuniciones>
+			<costoComida>19</costoComida>
+		</calamidad>
+	</sitio>
+</maquina>
