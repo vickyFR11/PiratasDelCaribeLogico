@@ -27,6 +27,15 @@ public class Mapa implements java.io.Serializable{
     public boolean evaluarDestino(String destino){
         return true;
     }
+    
+    /**
+     * Determina donde está, busca en la lista el siguiente sitio y lo retorna
+     * @return
+     */
+    public String getSiguienteSitio(){
+        
+        return "string";
+    }
 
     public void setRuta(List<String> ruta) {
         this.ruta = ruta;
