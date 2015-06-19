@@ -5,6 +5,7 @@
  */
 package parsexml;
 
+import static java.lang.Integer.parseInt;
 import java.rmi.*;
 import java.rmi.server.*;
 import java.util.logging.Level;
@@ -16,23 +17,30 @@ import java.util.logging.Logger;
  * @author Jose Gabriel
  */
 public class RemoteClass extends UnicastRemoteObject implements RMIInterface{
+    private Maquina maquina;
     
-    public RemoteClass() throws RemoteException{
+    public RemoteClass(Maquina maquina) throws RemoteException{
         super();
+        this.maquina = maquina;
     }
     
     @Override
-    public boolean desembarcar(Barco barco, String nombreSitio) throws RemoteException{
+    public boolean desembarcar(Barco barco, String nombreSitio, int idMaquina) throws RemoteException{
+        String id[];
+        for (int i=0; i < this.maquina.getPuntoSalida().size(); i++){
+            id = this.maquina.getPuntoSalida().get(i).split("-");
+            
+            if (idMaquina == parseInt(id[0])){
+                //aparecer el barco
+                Hilo hilo = new Hilo(barco,nombreSitio);
+        
+                hilo.start();
+            }
+        }     
+        
         System.out.println("Objeto remoto enviado exitosamente");
         System.out.println("Nombre barco: "+barco.getNombre() +" -- Va: "+nombreSitio);
-        Hilo hilo = new Hilo(barco,nombreSitio);
-        
-        hilo.start();
-//        try {
-//            hilo.run(barco, nombreSitio);
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(RemoteClass.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+
         return true;
     }
     
