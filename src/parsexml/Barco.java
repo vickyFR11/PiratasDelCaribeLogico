@@ -52,7 +52,7 @@ public class Barco implements java.io.Serializable{
         return maxMuniciones;
     }
        
-    public void llamadaRMI(String ip, String nombreSitio){
+    public void llamadaRMI(String ip, String nombreSitio, int idMaquina){
         try{
             int puerto = 8050;
             String URLRegistro = "rmi://"+ip+":"+puerto+"/barco";
@@ -61,7 +61,7 @@ public class Barco implements java.io.Serializable{
             BufferedReader buf = new BufferedReader(ent);
                         
             RMIInterface objetoRemoto = (RMIInterface)Naming.lookup(URLRegistro);
-            if(objetoRemoto.desembarcar(this, nombreSitio)){
+            if(objetoRemoto.desembarcar(this, nombreSitio, idMaquina)){
                 System.out.println("Barco enviado exitosamente");
             }else{
                 System.out.println("Error al cruzar de nodo.");

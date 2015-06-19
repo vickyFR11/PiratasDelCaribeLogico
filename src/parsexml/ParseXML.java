@@ -22,6 +22,7 @@ public class ParseXML {
 
     public static void main(String[] args) {
         int i, cofres;
+        Maquina objeto = null;
         List<String> ruta;
         String nCalamidad;
         int oro, plata, perlas, monedas, joyas, piedras, corazon, capac;
@@ -39,7 +40,7 @@ public class ParseXML {
 		JAXBContext jaxbContext = JAXBContext.newInstance(Maquina.class);
  
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		Maquina objeto = (Maquina) jaxbUnmarshaller.unmarshal(file);
+		objeto = (Maquina) jaxbUnmarshaller.unmarshal(file);
                 
                 Barco barco = objeto.getBarco();
                 Cofre cBarco = new Cofre(objeto.getBarco().getCofre().getCapacidad());
@@ -92,7 +93,7 @@ public class ParseXML {
            numPuerto = Integer.toString(8050);
            System.out.println("Iniciando server RMI. Port:  "+numPuerto);
            arrancarRegistro(numPuerto);
-           RemoteClass objetoRemoto = new RemoteClass();
+           RemoteClass objetoRemoto = new RemoteClass(objeto);
            URLRegistro = "rmi://192.168.110.102:"+numPuerto+"/barco";
            
            Naming.rebind(URLRegistro,objetoRemoto);
