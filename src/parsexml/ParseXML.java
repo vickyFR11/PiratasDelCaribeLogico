@@ -35,7 +35,7 @@ public class ParseXML {
         
         try {
  
-		File file = new File("/home/vicky/Documentos/PiratasDelCaribe/configXML/maquina01.xml");
+		File file = new File("src/parsexml/configXML/maquina01.xml");
 		JAXBContext jaxbContext = JAXBContext.newInstance(Maquina.class);
  
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
