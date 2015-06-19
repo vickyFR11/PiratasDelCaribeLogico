@@ -45,8 +45,9 @@ public class ParseXML {
                 Cofre cBarco = new Cofre(objeto.getBarco().getCofre().getCapacidad());
                 
                 barco.setCofre(cBarco);
+                barco.reabastecer();
                 
-                //System.out.println(objeto.getPuntoSalida());
+                //System.out.println(barco.getComida());
                 
                 for (i=0 ; i< objeto.getSitio().size(); i++){
                     oro = objeto.getSitio().get(i).getCofre().getOro();

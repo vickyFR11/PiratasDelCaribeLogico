@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <maquina id="4">
 	<ip>192.168.110.14</ip>
-	<salida>1-</salida>
-	<salida>2-</salida>
-	<salida>3-</salida>
+	<salida>1-0,0</salida>
+	<salida>2-598,0</salida>
+	<salida>3-0,384</salida>
 	<sitio>
 		<isla>La Gran Isla de la Española</isla>
 		<nombreSitio>Puerto Rico</nombreSitio>

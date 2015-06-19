@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <maquina id="2">
 	<ip>192.168.110.12</ip>
-	<salida>1-</salida>
-	<salida>3-</salida>
-	<salida>4-</salida>
+	<salida>1-0,384</salida>
+	<salida>3-0,768</salida>
+	<salida>4-598,768</salida>
 	<barco>
 		<nombre>Invencible</nombre>
-		<tripulacion>60</tripulacion>
-		<comida>120</comida>
-		<municiones>80</municiones>
+		<maxTripulacion>160</maxTripulacion>
+		<maxComida>120</maxComida>
+		<maxMuniciones>180</maxMuniciones>
 		<tipo>2</tipo>
 		<cofre>
 			<capacidad>50</capacidad>
@@ -16,9 +16,9 @@
 	</barco>
 	<barco>
 		<nombre>Interceptor</nombre>
-		<tripulacion>80</tripulacion>
-		<comida>160</comida>
-		<municiones>90</municiones>
+		<maxTripulacion>180</maxTripulacion>
+		<maxComida>160</maxComida>
+		<maxMuniciones>190</maxMuniciones>
 		<tipo>2</tipo>
 		<cofre>
 			<capacidad>50</capacidad>

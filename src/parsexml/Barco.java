@@ -18,7 +18,40 @@ public class Barco implements java.io.Serializable{
     private int municiones;
     private int tipo;
     private Cofre cofre;
+    private int maxTripulacion;
+    private int maxComida;
+    private int maxMuniciones;
+
+    public void reabastecer(){
+        this.setTripulacion(this.getMaxTripulacion());
+        this.setComida(this.getMaxComida());
+        this.setMuniciones(this.getMaxMuniciones());
+    }
     
+    public void setMaxTripulacion(int maxTripulacion) {
+        this.maxTripulacion = maxTripulacion;
+    }
+
+    public void setMaxComida(int maxComida) {
+        this.maxComida = maxComida;
+    }
+
+    public void setMaxMuniciones(int maxMuniciones) {
+        this.maxMuniciones = maxMuniciones;
+    }
+    
+    public int getMaxTripulacion() {
+        return maxTripulacion;
+    }
+
+    public int getMaxComida() {
+        return maxComida;
+    }
+
+    public int getMaxMuniciones() {
+        return maxMuniciones;
+    }
+       
     public void llamadaRMI(String ip, String nombreSitio){
         try{
             int puerto = 8050;

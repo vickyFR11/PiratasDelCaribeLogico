@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <maquina id="3">
 	<ip>192.168.110.13</ip>
-	<salida>1-</salida>
-	<salida>2-</salida>
-	<salida>4-</salida>
+	<salida>1-598,0</salida>
+	<salida>2-1196,0</salida>
+	<salida>4-1196,384</salida>
 	<sitio>
 		<isla>Isla Tortuga</isla>
 		<nombreSitio>Cueva de los Huesos</nombreSitio>
