@@ -17,13 +17,13 @@ public class Cofre implements java.io.Serializable{
     private int corazonPrincesa;
     private int capacidad;
     private int totalActual;
-    public static int pesoOro = 25;
-    public static int pesoPlata = 50;
-    public static int pesoPerlas = 10;
-    public static int pesoMonedas = 15;
-    public static int pesoJoyas = 15;
-    public static int pesoPiedras = 10;
-    public static int pesoCorazon = 5;
+    public static double pesoOro = 25.0;
+    public static double pesoPlata = 50.0;
+    public static double pesoPerlas = 10.0;
+    public static double pesoMonedas = 15.0;
+    public static double pesoJoyas = 15.0;
+    public static double pesoPiedras = 10.0;
+    public static double pesoCorazon = 5.0;
 
     public Cofre() {
         this.mapa = null;
@@ -51,13 +51,13 @@ public class Cofre implements java.io.Serializable{
     
     public Cofre(Mapa mapa,int oro, int plata, int perlas, int monedasOro, int joyas, int piedrasPreciosas, int corazonPrincesa, int capacidad) {
         this.mapa = mapa;
-        this.oro = oro*pesoOro;
-        this.plata = plata*pesoPlata;
-        this.perlas = perlas*pesoPerlas;
-        this.monedasOro = monedasOro*pesoMonedas;
-        this.joyas = joyas*pesoJoyas;
-        this.piedrasPreciosas = piedrasPreciosas*pesoPiedras;
-        this.corazonPrincesa = corazonPrincesa*pesoCorazon;
+        this.oro = oro*(int)pesoOro;
+        this.plata = plata*(int)pesoPlata;
+        this.perlas = perlas*(int)pesoPerlas;
+        this.monedasOro = monedasOro*(int)pesoMonedas;
+        this.joyas = joyas*(int)pesoJoyas;
+        this.piedrasPreciosas = piedrasPreciosas*(int)pesoPiedras;
+        this.corazonPrincesa = corazonPrincesa*(int)pesoCorazon;
         this.capacidad = capacidad;
     }
     
@@ -65,6 +65,102 @@ public class Cofre implements java.io.Serializable{
         this.totalActual = this.oro + this.plata + this.perlas + this.monedasOro + this.joyas + this.piedrasPreciosas + this.corazonPrincesa;
         
         return totalActual;
+    }
+    
+    /* NOTA: Arreglar constructor, definir si todo Double o INT */
+    //If lo que tengo de oro es mayor a lo q libero.
+            //Cantidad a liberar ENTRE peso por obj
+                //Si es entero tomo el numero, si decimales redondear al sig.
+                    //Seteo los valores cofreOrigen y cofreDestino
+    public void liberarEspacio(int libras, Cofre cofreOrigen, Cofre cofreDestino){
+        double div, decimal;
+        int entero;
+        int unidCofre, unidRemove;
+        
+        if (cofreOrigen.getOro() >= libras){
+            div = (libras/pesoOro);
+            decimal = div - Math.floor(div);
+
+            entero = (int)div;
+            
+            if (decimal > 0){
+                unidCofre = cofreOrigen.getOro()/(int)pesoOro;
+                unidRemove = unidCofre - (entero+1);
+                cofreOrigen.setOro(unidRemove*(int)pesoOro);
+            }else{
+                cofreOrigen.setOro(entero*(int)pesoOro);
+            }
+            
+        }else if (cofreOrigen.getPlata() >= libras){
+            div = (libras/pesoPlata);
+            decimal = div - Math.floor(div);
+
+            entero = (int)div;
+            
+            if (decimal > 0){
+                unidCofre = cofreOrigen.getPlata()/(int)pesoPlata;
+                unidRemove = unidCofre - (entero+1);
+                cofreOrigen.setPlata(unidRemove*(int)pesoPlata);
+            }else{
+                cofreOrigen.setPlata(entero*(int)pesoPlata);
+            }
+            
+        }else if (cofreOrigen.getPerlas() >= libras){
+            div = (libras/pesoPerlas);
+            decimal = div - Math.floor(div);
+
+            entero = (int)div;
+            
+            if (decimal > 0){
+                unidCofre = cofreOrigen.getPerlas()/(int)pesoPerlas;
+                unidRemove = unidCofre - (entero+1);
+                cofreOrigen.setPerlas(unidRemove*(int)pesoPerlas);
+            }else{
+                cofreOrigen.setPerlas(entero*(int)pesoPerlas);
+            }
+            
+        }else if (cofreOrigen.getJoyas() >= libras){
+            div = (libras/pesoJoyas);
+            decimal = div - Math.floor(div);
+
+            entero = (int)div;
+            
+            if (decimal > 0){
+                unidCofre = cofreOrigen.getJoyas()/(int)pesoJoyas;
+                unidRemove = unidCofre - (entero+1);
+                cofreOrigen.setJoyas(unidRemove*(int)pesoJoyas);
+            }else{
+                cofreOrigen.setJoyas(entero*(int)pesoJoyas);
+            }
+            
+        }else if (cofreOrigen.getMonedasOro() >= libras){
+            div = (libras/pesoMonedas);
+            decimal = div - Math.floor(div);
+
+            entero = (int)div;
+            
+            if (decimal > 0){
+                unidCofre = cofreOrigen.getMonedasOro()/(int)pesoMonedas;
+                unidRemove = unidCofre - (entero+1);
+                cofreOrigen.setMonedasOro(unidRemove*(int)pesoMonedas);
+            }else{
+                cofreOrigen.setMonedasOro(entero*(int)pesoMonedas);
+            }
+            
+        }else if (cofreOrigen.getPiedrasPreciosas() >= libras){
+            div = (libras/pesoPiedras);
+            decimal = div - Math.floor(div);
+
+            entero = (int)div;
+            
+            if (decimal > 0){
+                unidCofre = cofreOrigen.getPiedrasPreciosas()/(int)pesoPiedras;
+                unidRemove = unidCofre - (entero+1);
+                cofreOrigen.setPiedrasPreciosas(unidRemove*(int)pesoPiedras);
+            }else{
+                cofreOrigen.setPiedrasPreciosas(entero*(int)pesoPiedras);
+            }
+        }     
     }
     
     public void setMapa(Mapa mapa) {

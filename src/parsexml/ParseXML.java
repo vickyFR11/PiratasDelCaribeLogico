@@ -78,9 +78,9 @@ public class ParseXML {
                     
                     objeto.getSitio().get(i).setCofre(cofre);
                     
-                    System.out.println(objeto.getSitio().get(i).getCalamidad());
+                    //System.out.println(objeto.getSitio().get(i).getCofre());
                 }
-                 
+                
 	  } catch (JAXBException e) {
 		System.out.println("error");
 	  }
