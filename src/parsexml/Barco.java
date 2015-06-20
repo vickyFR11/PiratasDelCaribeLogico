@@ -179,6 +179,10 @@ public class Barco implements java.io.Serializable{
             //Ejecutar calamidad
         }
         
+        if(this.comida <= this.maxComida/3 || this.municiones <= this.maxMuniciones/3
+           || this.tripulacion <= this.maxTripulacion/3){
+            return true;
+        }
         //Si tiene menos de 1/3 de recursos retornar true
         
         return false;
