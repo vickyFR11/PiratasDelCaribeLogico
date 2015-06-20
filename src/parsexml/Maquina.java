@@ -11,6 +11,7 @@ public class Maquina {
     private int id;
     private String ip;
     private List<String> puntoSalida;
+    private List<String> sitioRemoto;
     private Barco barco;
     private List<Sitio> sitio;
 
@@ -27,6 +28,15 @@ public class Maquina {
         return sitio;
     }
 
+    public List<String> getSitioRemoto() {
+        return sitioRemoto;
+    }
+
+    @XmlElement(name = "sitioRemoto") 
+    public void setSitioRemoto(List<String> sitioRemoto) {
+        this.sitioRemoto = sitioRemoto;
+    }
+    
     @XmlElement(name = "sitio") 
     public void setSitio(List<Sitio> sitio) {
         this.sitio = sitio;
