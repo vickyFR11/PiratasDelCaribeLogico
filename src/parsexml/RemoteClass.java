@@ -35,6 +35,7 @@ public class RemoteClass extends UnicastRemoteObject implements RMIInterface{
                 Hilo hilo = new Hilo(barco,nombreSitio);
         
                 hilo.start();
+                break;
             }
         }     
         
@@ -55,15 +56,61 @@ public class RemoteClass extends UnicastRemoteObject implements RMIInterface{
 
         @Override
         public void run(){
-            System.out.println("Entro hilo");
-            for (int i=0; i<5; i++){
+            String dato[];
+            dato = nombreSitio.split("-");
+            
+            while(true){
+                //Si son diferentes es Remoto, sino es Local
+                if (parseInt(dato[0]) != maquina.getId()){
+                    //Mover al limite
+                    for (int i=0; i < maquina.getSitioRemoto().size(); i++){
+                        String ip[];
+                        ip = maquina.getIpRemota().get(i).split("-");
+                        if (dato[0].equals(ip[0]) == true){
+//                            if (barco.llamadaRMI(ip[1], dato[0]+"-"+dato[1], maquina.getId()) == false){
+//                                
+//                            }
+                            break;
+                        }
+                    }
+                    
+                    //Desaparecer barco
+                }
+                //mover al sitio
+                //Esperar retorno funcion. Mover Sitio
+                
+                for (int i=0; i < maquina.getSitio().size(); i++){
+                    if (dato[1].equals(maquina.getSitio().get(i).getNombreSitio()) == true){
+                        //Retorna true: Cuando se queda sin recursos.
+                        if (barco.descontarRecursos(maquina.getSitio().get(i)) == true){
+                            //mover a punto de origen (segun el tipo)
+                         
+                        //Recoger: True si encontro el corazon de la princesa    
+                        }else if (barco.recoger(maquina.getSitio().get(i)) == true){
+                            //mover a punto de origen (segun el tipo)
+                        }
+                        break;
+                    }
+                }
+                
+                barco.getCofre().getMapa().setSitioActual();
+                dato = barco.getCofre().getMapa().getRuta().get(barco.getCofre().getMapa().getSitioActual()).split("-");
                 try {
-                    System.out.println("BARCO: "+barco.getNombre());
                     Thread.sleep(5000);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(RemoteClass.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
+                
+//            System.out.println("Entro hilo");
+//            for (int i=0; i<5; i++){
+//                try {
+//                    System.out.println("BARCO: "+barco.getNombre());
+//                    Thread.sleep(5000);
+//                } catch (InterruptedException ex) {
+//                    Logger.getLogger(RemoteClass.class.getName()).log(Level.SEVERE, null, ex);
+//                }
+//            }
         }
          
     }

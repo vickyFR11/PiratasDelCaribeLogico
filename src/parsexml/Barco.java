@@ -149,11 +149,11 @@ public class Barco implements java.io.Serializable{
         
         //Recoger mapa
         if(sitio.getCofre().getMapa() != null){
-            if(this.cofre.getMapa().getSitiosVisitados() > sitio.getCofre().getMapa().getRuta().size()){
+            if(this.cofre.getMapa().getSitioActual() > sitio.getCofre().getMapa().getRuta().size()){
                 auxMapa = this.cofre.getMapa();
                 this.cofre.setMapa(sitio.getCofre().getMapa());
                 this.cofre.setMapa(auxMapa);
-                System.out.println("Barco: "+this.nombre+" intercambió tesoro");
+                System.out.println("Barco: "+this.nombre+" intercambió Mapa");
             }
         }
         

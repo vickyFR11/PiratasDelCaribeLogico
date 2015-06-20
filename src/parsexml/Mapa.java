@@ -9,16 +9,16 @@ import java.util.*;
  */
 public class Mapa implements java.io.Serializable{
     private List<String> ruta; //posicion es el sitio, elemento dentro del ArrayList es IP
-    private int nroSitiosVisitados;
     private int sitioActual;
 
     public Mapa() {
         this.ruta = null;
-        this.nroSitiosVisitados = 0;
+        this.sitioActual = 0;
     }
     
     public Mapa(List<String> ruta) {
         this.ruta = ruta;
+        this.sitioActual = 0;
     }
     
     /**
@@ -41,6 +41,10 @@ public class Mapa implements java.io.Serializable{
     public void setSitioActual(int sitioActual) {
         this.sitioActual = sitioActual;
     }
+    
+    public void setSitioActual() {
+        this.sitioActual++;
+    }
 
     public int getSitioActual() {
         return sitioActual;
@@ -50,17 +54,8 @@ public class Mapa implements java.io.Serializable{
         this.ruta = ruta;
     }
 
-    public void setSitiosVisitados(int nroSitiosVisitados) {
-        this.nroSitiosVisitados = nroSitiosVisitados;
-    }
-
     public List<String> getRuta() {
         return ruta;
-    }
-
-    public int getSitiosVisitados() {
-        return nroSitiosVisitados;
-    }
-    
+    }  
     
 }

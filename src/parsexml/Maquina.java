@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.*;
 public class Maquina {
     private int id;
     private String ip;
+    private List<String> ipRemota;
     private List<String> puntoSalida;
     private List<String> sitioRemoto;
     private Barco barco;
@@ -52,6 +53,15 @@ public class Maquina {
 
     public List<String> getPuntoSalida() {
         return puntoSalida;
+    }
+
+    @XmlElement(name = "ipRemota")
+    public void setIpRemota(List<String> ipRemota) {
+        this.ipRemota = ipRemota;
+    }
+
+    public List<String> getIpRemota() {
+        return ipRemota;
     }
     
     @XmlAttribute
