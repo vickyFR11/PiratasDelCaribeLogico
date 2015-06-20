@@ -4,6 +4,26 @@
 	<salida>1-598,0</salida>
 	<salida>2-1196,0</salida>
 	<salida>4-1196,384</salida>
+	<sitioRemoto>1-Puerto Real</sitioRemoto>
+	<sitioRemoto>1-Cala de los Martires</sitioRemoto>
+	<sitioRemoto>1-Playa de las Perlas</sitioRemoto>
+	<sitioRemoto>1-Cayo del Buen Viento</sitioRemoto>
+	<sitioRemoto>1-Cayo de Sotavento</sitioRemoto>
+	<sitioRemoto>2-Puerto de la Reina</sitioRemoto>
+	<sitioRemoto>2-Bahia del Buen Reposo</sitioRemoto>
+	<sitioRemoto>2-Cueva de los Marineros</sitioRemoto>
+	<sitioRemoto>2-Bahia de la Esperanza</sitioRemoto>
+	<sitioRemoto>2-Cueva del Bucanero</sitioRemoto>
+	<sitioRemoto>3-Cueva de los huesos</sitioRemoto>
+	<sitioRemoto>3-Bahia del Buen Retiro</sitioRemoto>
+	<sitioRemoto>3-Bahia de las Flores</sitioRemoto>
+	<sitioRemoto>3-Cementerio de Barcos</sitioRemoto>
+	<sitioRemoto>3-Cayo de Barlovento</sitioRemoto>
+	<sitioRemoto>4-Puerto Rico</sitioRemoto>
+	<sitioRemoto>4-Puerto de las Ballenas</sitioRemoto>
+	<sitioRemoto>4-Bahia del Tesoro Perdido</sitioRemoto>
+	<sitioRemoto>4-Cueva del Pirata</sitioRemoto>
+	<sitioRemoto>4-Cayo de los Pelicanos</sitioRemoto>
 	<sitio>
 		<isla>Isla Tortuga</isla>
 		<nombreSitio>Cueva de los Huesos</nombreSitio>
