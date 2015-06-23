@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <maquina id="3">
 	<ip>192.168.110.13</ip>
-	<ipRemota>1-192.168.110.102</ipRemota>
-	<ipRemota>2-192.168.110.137</ipRemota>
-	<ipRemota>3-192.168.110.124</ipRemota>
-	<ipRemota>4-192.168.110.14</ipRemota>
 	<salida>1-598,0</salida>
 	<salida>2-1196,0</salida>
 	<salida>4-1196,384</salida>
@@ -31,6 +27,8 @@
 	<sitio>
 		<isla>Isla Tortuga</isla>
 		<nombreSitio>Cueva de los Huesos</nombreSitio>
+		<posX>50</posX>
+		<posY>70</posY>
 		<cofre>
 			<mapa>
 			</mapa>
@@ -55,6 +53,8 @@
 	<sitio>
 		<isla>Isla Tortuga</isla>
 		<nombreSitio>Bahia del Buen Retiro</nombreSitio>
+		<posX>240</posX>
+		<posY>200</posY>
 		<cofre>
 			<mapa>
 				<ruta>1-Playa de las Perlas</ruta>
@@ -79,6 +79,8 @@
 	<sitio>
 		<isla>Isla las Aves</isla>
 		<nombreSitio>Bahia de las Flores</nombreSitio>
+		<posX>350</posX>
+		<posY>350</posY>
 		<cofre>
 			<mapa>
 				
@@ -98,6 +100,8 @@
 	<sitio>
 		<isla>Isla las Aves</isla>
 		<nombreSitio>Cementerio de Barcos</nombreSitio>
+		<posX>580</posX>
+		<posY>500</posY>
 		<cofre>
 			<mapa>
 				
@@ -116,6 +120,8 @@
 	</sitio>
 	<sitio>
 		<nombreSitio>Cayo de Barlovento</nombreSitio>
+		<posX>800</posX>
+		<posY>480</posY>
 		<cofre>
 			<mapa>
 				

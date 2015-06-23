@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <maquina id="2">
 	<ip>192.168.110.12</ip>
-    <ipRemota>1-192.168.110.102</ipRemota>
-	<ipRemota>2-192.168.110.137</ipRemota>
-	<ipRemota>3-192.168.110.124</ipRemota>
-	<ipRemota>4-192.168.110.14</ipRemota>
 	<salida>1-0,384</salida>
 	<salida>3-0,768</salida>
 	<salida>4-598,768</salida>
-    <sitioRemoto>1-Puerto Real</sitioRemoto>
+	<sitioRemoto>1-Puerto Real</sitioRemoto>
 	<sitioRemoto>1-Cala de los Martires</sitioRemoto>
 	<sitioRemoto>1-Playa de las Perlas</sitioRemoto>
 	<sitioRemoto>1-Cayo del Buen Viento</sitioRemoto>
@@ -30,6 +26,7 @@
 	<sitioRemoto>4-Cayo de los Pelicanos</sitioRemoto>
 	<barco>
 		<nombre>Invencible</nombre>
+		<rutaOrigen>2-Puerto de la Reina</rutaOrigen>
 		<maxTripulacion>160</maxTripulacion>
 		<maxComida>120</maxComida>
 		<maxMuniciones>180</maxMuniciones>
@@ -40,6 +37,7 @@
 	</barco>
 	<barco>
 		<nombre>Interceptor</nombre>
+		<rutaOrigen>2-Puerto de la Reina</rutaOrigen>
 		<maxTripulacion>180</maxTripulacion>
 		<maxComida>160</maxComida>
 		<maxMuniciones>190</maxMuniciones>
@@ -51,6 +49,8 @@
 	<sitio>
 		<isla>Isla La Holandesa</isla>
 		<nombreSitio>Puerto de la Reina</nombreSitio>
+		<posX>950</posX>
+		<posY>500</posY>
 		<cofre>
 			<mapa>
 				
@@ -70,6 +70,8 @@
 	<sitio>
 		<isla>Isla La Holandesa</isla>
 		<nombreSitio>Bahia del Buen Reposo</nombreSitio>
+		<posX>750</posX>
+		<posY>300</posY>
 		<cofre>
 			<mapa>
 				
@@ -89,6 +91,8 @@
 	<sitio>
 		<isla>Isla La Holandesa</isla>
 		<nombreSitio>Cueva de los Marineros</nombreSitio>
+		<posX>800</posX>
+		<posY>200</posY>
 		<cofre>
 			<mapa>
 				<ruta>1-Cayo del Buen Viento</ruta>
@@ -113,6 +117,8 @@
 	<sitio>
 		<isla>Isla del Naufrago</isla>
 		<nombreSitio>Bahia de la Esperanza</nombreSitio>
+		<posX>700</posX>
+		<posY>50</posY>
 		<cofre>
 			<mapa>
 				
@@ -132,6 +138,8 @@
 	<sitio>
 		<isla>Isla del Naufrago</isla>
 		<nombreSitio>Cueva del Bucanero</nombreSitio>
+		<posX>600</posX>
+		<posY>10</posY>
 		<cofre>
 			<mapa>
 				<ruta>4-Puerto Rico</ruta>

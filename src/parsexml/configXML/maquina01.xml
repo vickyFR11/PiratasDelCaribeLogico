@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <maquina id="1">
 	<ip>192.168.110.11</ip>
-	<ipRemota>1-192.168.110.102</ipRemota>
-	<ipRemota>2-192.168.110.137</ipRemota>
-	<ipRemota>3-192.168.110.124</ipRemota>
-	<ipRemota>4-192.168.110.14</ipRemota>
 	<salida>2-1196,384</salida>
 	<salida>3-598,768</salida>
 	<salida>4-1196,384</salida>
@@ -30,6 +26,7 @@
 	<sitioRemoto>4-Cayo de los Pelicanos</sitioRemoto>
 	<barco>
 		<nombre>Venganza Errante</nombre>
+		<rutaOrigen>1-Puerto Real</rutaOrigen>
 		<maxTripulacion>150</maxTripulacion>
 		<maxComida>180</maxComida>
 		<maxMuniciones>160</maxMuniciones>
@@ -41,6 +38,8 @@
 	<sitio>
 		<isla>Isla Nueva Esperanzas</isla>
 		<nombreSitio>Puerto Real</nombreSitio>
+		<posX>500</posX>
+		<posY>200</posY>
 		<cofre>
 			<mapa>	
 			</mapa>
@@ -59,6 +58,8 @@
 	<sitio>
 		<isla>Isla Nueva Esperanzas</isla>
 		<nombreSitio>Cala de los Martires</nombreSitio>
+		<posX>300</posX>
+		<posY>300</posY>
 		<cofre>
 			<mapa>
 				<ruta>3-Cueva de los Huesos</ruta>
@@ -89,6 +90,8 @@
 		<sitio>
 		<isla>Isla Nueva Esperanzas</isla>
 		<nombreSitio>Playa de las Perlas</nombreSitio>
+		<posX>180</posX>
+		<posY>350</posY>
 		<cofre>
 			<mapa>	
 			</mapa>
@@ -106,6 +109,8 @@
 	</sitio>
 	<sitio>
 		<nombreSitio>Cayo del Buen Viento</nombreSitio>
+		<posX>500</posX>
+		<posY>500</posY>
 		<cofre>
 			<mapa>
 			</mapa>
@@ -123,6 +128,8 @@
 	</sitio>
 	<sitio>
 		<nombreSitio>Cayo de Sotavento</nombreSitio>
+		<posX>500</posX>
+		<posY>60</posY>
 		<cofre>
 			<mapa>				
 			</mapa>

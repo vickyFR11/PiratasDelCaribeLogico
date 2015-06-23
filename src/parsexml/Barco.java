@@ -12,7 +12,7 @@ import java.rmi.RemoteException;
  * @author vicky
  */
 public class Barco implements java.io.Serializable{
-    private String nombre;
+    private String nombre, rutaOrigen;
     private int tripulacion;
     private int comida;
     private int municiones;
@@ -32,6 +32,14 @@ public class Barco implements java.io.Serializable{
         this.maxTripulacion = maxTripulacion;
     }
 
+    public String getRutaOrigen() {
+        return rutaOrigen;
+    }
+
+    public void setRutaOrigen(String rutaOrigen) {
+        this.rutaOrigen = rutaOrigen;
+    }
+   
     public void setMaxComida(int maxComida) {
         this.maxComida = maxComida;
     }

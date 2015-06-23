@@ -58,7 +58,31 @@ public class RemoteClass extends UnicastRemoteObject implements RMIInterface{
         public void run(){
             String dato[];
             dato = nombreSitio.split("-");
+            Boolean flag = false; 
             
+            //Determinar si viene a la base
+            if (nombreSitio.equals(barco.getRutaOrigen()) == true){                
+                //mover a origen
+                //Esperar que el barco termine de moverse
+                    
+                if (barco.getCofre().getCorazonPrincesa() != 0){
+                    
+                    System.out.println("GANASTE: Finalizo el juego.");
+                    
+                    //avisar a las demas maquinas que se termino el juego
+                    return;
+                }else{
+                    barco.reabastecer();
+                    try {
+                        System.out.println("Barco: Reabasteciendo.");
+                        Thread.sleep(5000); 
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(RemoteClass.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    dato = barco.getCofre().getMapa().getRuta().get(barco.getCofre().getMapa().getSitioActual()).split("-");
+                }   
+            }
+                
             while(true){
                 //Si son diferentes es Remoto, sino es Local
                 if (parseInt(dato[0]) != maquina.getId()){
@@ -67,32 +91,36 @@ public class RemoteClass extends UnicastRemoteObject implements RMIInterface{
                         String ip[];
                         ip = maquina.getIpRemota().get(i).split("-");
                         if (dato[0].equals(ip[0]) == true){
-//                            if (barco.llamadaRMI(ip[1], dato[0]+"-"+dato[1], maquina.getId()) == false){
-//                                
-//                            }
+                            if (barco.llamadaRMI(ip[1], dato[0]+"-"+dato[1], maquina.getId()) == false){
+                                System.out.println("Error LlamadaRMI: No se pudo enviar el Barco.");
+                                flag = true;
+                            }
                             break;
                         }
                     }
                     
                     //Desaparecer barco
+                    return;
                 }
                 //mover al sitio
                 //Esperar retorno funcion. Mover Sitio
-                
-                for (int i=0; i < maquina.getSitio().size(); i++){
-                    if (dato[1].equals(maquina.getSitio().get(i).getNombreSitio()) == true){
-                        //Retorna true: Cuando se queda sin recursos.
-                        if (barco.descontarRecursos(maquina.getSitio().get(i)) == true){
-                            //mover a punto de origen (segun el tipo)
-                         
-                        //Recoger: True si encontro el corazon de la princesa    
-                        }else if (barco.recoger(maquina.getSitio().get(i)) == true){
-                            //mover a punto de origen (segun el tipo)
+                if (flag == true){
+                    for (int i=0; i < maquina.getSitio().size(); i++){
+                        if (dato[1].equals(maquina.getSitio().get(i).getNombreSitio()) == true){
+                            //Retorna true: Cuando se queda sin recursos.
+                            if (barco.descontarRecursos(maquina.getSitio().get(i)) == true){
+                                //Hacer llamada RMI al punto de origen de barco.
+                                return;
+
+                            //Recoger: True si encontro el corazon de la princesa    
+                            }else if (barco.recoger(maquina.getSitio().get(i)) == true){
+                                //Hacer llamada RMI al punto de origen de barco.
+                                return;
+                            }
+                            break;
                         }
-                        break;
                     }
                 }
-                
                 barco.getCofre().getMapa().setSitioActual();
                 dato = barco.getCofre().getMapa().getRuta().get(barco.getCofre().getMapa().getSitioActual()).split("-");
                 try {
@@ -100,19 +128,8 @@ public class RemoteClass extends UnicastRemoteObject implements RMIInterface{
                 } catch (InterruptedException ex) {
                     Logger.getLogger(RemoteClass.class.getName()).log(Level.SEVERE, null, ex);
                 }
-            }
                 
-//            System.out.println("Entro hilo");
-//            for (int i=0; i<5; i++){
-//                try {
-//                    System.out.println("BARCO: "+barco.getNombre());
-//                    Thread.sleep(5000);
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(RemoteClass.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//            }
-        }
-         
+            }
+        }         
     }
-    
 }
